@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <img src="sheprint 4.jpg" alt="SHEPRINT IMPRESIONES 3D">
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fotos.html">Nuestros trabajos</a></li>
+            <li><a href="presentacion.html">Quienes somos</a></li>
+        </ul>
+    </nav>
+    
+    <h1>¡Sumate a nuestra comunidad y obtené beneficios!</h1>
+
+    <form id="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]{2,}"
+        required />
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" pattern="[A-Za-z\s]{2,}"
+        required />
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+        required />
+        <br>
+        <label for="telefono">Telefono:</label>
+        <input type="number" id="telefono" name="telefono"
+        pattern="\d{7,15}"
+        required />
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" pattern="\d{7,8}"
+        required />
+        <br>
+        <button type="submit">Enviar formulario</button>
+
+    </form>
+
+
+</body>
+<br>
+
+<footer>
+    <b>Contactanos</b>
+    <br>
+    <a href="https://www.instagram.com/sheprint3d/" target="_blank">Instagram</a>
+    <br>
+    <a href="https://wa.me/5492615178785" target="_blank">Whatsapp</a>
+    <br>
+    <img src="sheprint 10.jpg" alt="SHEPRINT IMPRESIONES 3D" width="200">
+    <br>
+    <p>Todos los derechos reservados</p>
+</footer>
+</html>

@@ -1,0 +1,179 @@
+*{
+    background-color: white;
+}
+    
+.logo{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: absolute;
+}
+
+.container img{
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: cambiar 12s infinite;
+}
+
+@keyframes cambiar{
+    0%, 100%{
+        opacity: 0;
+    }
+    20%, 40%{
+        opacity: 1;
+    }
+    60%, 80%{
+        opacity: 1;
+    }
+}
+
+h1{
+    text-align: center;
+    color: rgb(219, 172, 70);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.menu{
+    background-color: rgb(219, 172, 70);
+    border: 2px solid black;
+    border-radius: 4rem;
+    margin: 0,4rem;
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botonNav{
+    border: 0;
+    width: 12rem;
+    height: 2rem;
+    background-color: rgb(219, 172, 70)
+    color(rgb(219, 172, 70));
+}
+.botonElement{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 123%;
+    font-variant: small-caps;
+    text-align: center;
+    color: rgb(219, 172, 70);
+}
+
+.botonElement:hover{
+    color: black;
+}
+
+h2{
+    text-align: center;
+    color: rgb(219, 172, 70);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textoInicio{
+    text-align: center;
+    font-family: 'Gill Sans';
+}
+
+footer.bloque{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 172, 70);
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloque1{
+    background-color: rgb(219, 172, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bloque1 b{
+    background-color: rgb(219, 172, 70);
+    color: black;
+}
+
+.bloque2{
+    background-color: rgb(219, 172, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bloque1 a, .bloque2 p, .bloque2 img{
+    background-color: rgb(219, 172, 70);
+    color: black;
+    text-decoration: none;
+}
+
+.bloque1 a:hover{
+    color: white;
+}
+
+.bloqueImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+}
+
+.instagram-block {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.instagram-media {
+    max-width: 32%;
+}
+
+.formulario li{
+    margin-bottom: 15px;
+}
+
+.formulario label, .formulario input{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.botonForm{
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(219, 172, 70);
+    color: black;
+    border: 1;
+    border-radius: 5px;
+    border-color: rgb(219, 172, 70);
+    cursor: pointer;
+}
+
+.botonForm:hover{
+    background-color: white;
+    color: rgb(219, 172, 70);
+
+}
