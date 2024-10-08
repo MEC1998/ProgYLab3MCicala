@@ -19,11 +19,13 @@ export const Login = () => {
     const navigate=useNavigate()
 
     const handleSubmitForm=async(e:FormEvent<HTMLFormElement>)=>{
+        console.log("Entrando")
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/users");
+        const response = await fetch("/user.json");
         const usersData= await response.json();
         const userFound= usersData.users.find((u: {username:string, password: string})=>u.username===user && u.password===password);
         if(userFound){
+            console.log(userFound)
             dispatch(setLogin(user));
             navigate("/");
         }else{

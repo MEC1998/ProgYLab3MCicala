@@ -1,12 +1,13 @@
-import { FC, FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import { Button, Col, Form, Navbar, Row } from "react-bootstrap"
+import { useAppDispatch } from "../../../hooks/redux";
+import { setGifts } from "../../../redux/slices/gift";
 
 const API_KEY=import.meta.env.VITE_API_KEY;
-interface IPropsNavBar{
-    setGift:Function
-}
-export const NavBar: FC<IPropsNavBar> = ({setGift}) => {
+
+export const NavBar= () => {
     
+    const dispatch=useAppDispatch()
     const fetchGift=async(query:string)=>{
         try {
             const response=await fetch(`
@@ -18,7 +19,7 @@ export const NavBar: FC<IPropsNavBar> = ({setGift}) => {
                     urlGift: el.images.fixed.height.url,
                     title: el.title,
                 }));
-                setGift(parseData);
+                dispatch(setGifts(parseData));
             } catch (error) {
                 console.warn(error);
         }
